@@ -42,19 +42,19 @@ export default function Header(){
                     />
                 </Link>
                 <nav className="flex justify-end">
-                    <div className="hidden w-full md:flex justify-end items-center gap-16">
+                    <div className="hidden md:flex justify-end items-center gap-16">
                         {links.map((link, index) => 
                         <Link href={link.href} key={index}>
-                            <span className="text-2xl text-white font-semibold px-8 hover:text-red-600 transition-all">{link.label}</span>
+                            <span className="text-xl text-white font-semibold px-8 lg:px-0 xl:px-8 hover:text-red-600 transition-all">{link.label}</span>
                         </Link>
                         )}
 
                         {linkbuttom.map((link, index) => 
                         <Link href={link.href} key={index}>
-                            <button className="text-2xl text-white bg-red-500 font-semibold p-3 mx-2 hover:bg-blue-400  transition-all rounded-3xl">{link.label}</button>
+                            <button className="text-xl text-white bg-red-500 font-semibold p-3 mx-2 hover:bg-blue-400  transition-all rounded-3xl">{link.label}</button>
                         </Link>
                         )}
-                        <div className="md:hidden p-4">
+                        <div className="lg:hidden p-4">
                             <button onClick={toogleSideBar}>
                                 {isOpen ?
                                     <X className="w-6 h-6"/>

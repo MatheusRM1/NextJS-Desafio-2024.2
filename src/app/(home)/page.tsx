@@ -5,7 +5,7 @@ import Produtos from "@/components/produtos";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-r from-[#4095C9] from-20%  to-[#A8DADC] to-99% min-h-screen md:p-0">
+    <div className="bg-gradient-to-bl from-[#4095C9] to-[#A8DADC] min-h-screen md:p-0">
         <HeroSection />
         <Carrosel />
         <Card />
