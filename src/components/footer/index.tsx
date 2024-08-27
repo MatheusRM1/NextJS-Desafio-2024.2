@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Footer(){
     return(
-        <div className="bg-[#073576] text-center w-full min-[250px] p-10 flex gap-96 lg:gap-32 items-center justify-center">
+        <div className="bg-[#073576] text-center w-full min-[250px] p-10 lg:flex lg:gap-32 items-center justify-center">
             <div className="flex flex-col">
                 <p className="text-white font-semibold text-xl text-center py-2">Redes Sociais</p>
                 <div className="flex flex-wrap justify-center">
@@ -22,7 +22,7 @@ export default function Footer(){
                         <Github className="text-white h-5 w-5 mx-1"/>
                     </Link>
 
-                    <Link href={'https://github.com/'} target="_blank">
+                    <Link href={'https://instagram.com/'} target="_blank">
                         <Instagram className="text-white h-5 w-5 mx-1"/>
                     </Link>
 
@@ -34,17 +34,15 @@ export default function Footer(){
             width={904}
             height={904}
             alt="Logo da Loja"
-            className="h-20 w-80 justify-center"
+            className="w-52 h-14 lg:h-20 lg:w-80 my-6"
             />
 
             <div className="flex flex-col">
-                <p className="text-2xl font-semibold text-white">Sobre nós</p>
-                <p className="text-xl font-light text-white py-4">Quem somos nós</p>
-                <p className="text-xl font-light text-white">Entre em contato</p>
+                <p className="text-xl font-semibold text-white">Sobre nós</p>
+                <p className="text-lg font-light text-white py-4">Quem somos nós</p>
+                <p className="text-lg font-light text-white">Entre em contato</p>
 
             </div>
-
-
         </div>
     )
 }
