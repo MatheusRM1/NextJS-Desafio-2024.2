@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Footer(){
     return(
-        <div className="bg-[#073576] text-center w-full min-[250px] p-10 lg:flex lg:gap-32 items-center justify-center">
+        <div className="bg-[#073576] text-center  md:flex-row w-full min-[250px] p-10 md:flex md:gap-32 items-center justify-center">
             <div className="flex flex-col">
                 <p className="text-white font-semibold text-xl text-center py-2">Redes Sociais</p>
                 <div className="flex flex-wrap justify-center">

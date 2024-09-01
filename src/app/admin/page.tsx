@@ -1,9 +1,11 @@
+import Paginacao from "@/components/paginacao";
 import Tabela from "@/components/tabela";
 
-export default function Admin(){
+export default function Page(){
     return(
-        <div>
+        <div className="w-full bg-[#E63946]">
             <Tabela />
+            <Paginacao />
         </div>
     )
 }

@@ -1,61 +1,43 @@
-import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
-import Image from "next/image";
 
-export default function Carrosel()
-{
-    return(
-        <section className="flex flex-wrap items-center justify-center w-full my-5">
-            <button>
-                <ArrowLeftIcon className="hidden lg:block"/>
-            </button>
-                <div className="w-20 h-16 lg:w-60 lg:h-40 bg-white rounded-3xl mx-2 lg:mx-5">
-                    <div className="flex justify-center py-2">
-                        <Image 
-                            src={'/produtos/Nerd.png'}
-                            alt="Produto"
-                            width={300}
-                            height={300}
-                            className="w-14 h-12 lg:w-32 lg:h-32 justify-center"
-                        />
-                    </div>
-                </div>
-                <div className="w-20 h-16  lg:w-60 lg:h-40 bg-white rounded-3xl mx-2 lg:mx-5">
-                    <div className="flex justify-center py-2">
-                        <Image 
-                            src={'/produtos/Game.png'}
-                            alt="Produto"
-                            width={1920}
-                            height={1080}
-                            className="w-14 h-12 lg:w-32 lg:h-32"
-                        />
-                    </div>
-                </div>
-                <div className="w-20 h-16 lg:w-60 lg:h-40 bg-white rounded-3xl mx-2 lg:mx-5">
-                    <div className="flex justify-center py-2">
-                        <Image 
-                            src={'/produtos/Pokemon.png'}
-                            alt="Produto"
-                            width={1920}
-                            height={1080}
-                            className="w-14 h-12 lg:w-32 lg:h-32"
-                        />
-                    </div>
-                </div>
+import {Swiper, SwiperSlide} from "swiper/react";
+import CarrosselCard from "../carrossel-card";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-                <div className="w-20 h-16 lg:w-60 lg:h-40 bg-white rounded-3xl mx-2 lg:mx-5">
-                    <div className="flex justify-center py-2">
-                        <Image 
-                            src={'/produtos/Pokemon.png'}
-                            alt="Produto"
-                            width={1920}
-                            height={1080}
-                            className="w-14 h-12 lg:w-32 lg:h-32"
-                        />
-                    </div>
-                </div>
-            <button>
-                <ArrowRightIcon className="hidden lg:block"/>
-            </button>
-        </section>
-    )
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+export default function Carrossel() {
+  return (
+      <Swiper 
+      modules={[Navigation, Pagination, Autoplay]}
+      spaceBetween={5}
+      slidesPerView={3}
+      navigation
+      autoplay={{ delay: 3000 }} 
+      loop={true}
+      >
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Pokemon.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Nerd.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Capitao.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Game.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Geek.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Pokemon.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarrosselCard imageSrc={"/produtos/Game.png"} imageAlt={"Produto"} />
+        </SwiperSlide>
+      </Swiper>
+  )
 }

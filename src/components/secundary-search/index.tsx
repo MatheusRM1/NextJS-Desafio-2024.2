@@ -1,20 +1,28 @@
 import { SearchIcon } from "lucide-react";
 
-export default function Search() {
+type SearchProps = {
+    count: number
+}
+
+export default function SecundarySearch({count} : SearchProps) {
     return(
-        <form className="flex basis-full " autoComplete="off">
+        <div>
+        <form className="flex basis-full " id="search" autoComplete="off">
             <div className="flex w-full flex-col items-center gap-6 my-16 ">
                 <div className="relative flex w-[700px] items-center ">
                     <SearchIcon className="w-7 h-7 absolute left-4"/>
                     <input 
                     type="text" 
-                    name="serach" 
-                    id="search" 
+                    name="serch-input" 
+                    id="search-input" 
                     className="w-full rounded-xl px-16 py-6 bg-white transition-all duration-300 "
                     />
                 </div>
-
+                <span className="text-black/70">
+                    Total de {count} publicações encontradas
+                </span>
             </div>
         </form>
+        </div>
     )
 }
