@@ -18,25 +18,25 @@ export default function Carrossel() {
       loop={true}
       >
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Pokemon.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Pokemon.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Nerd.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Nerd.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Capitao.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Capitao.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Game.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Game.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Geek.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Geek.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Pokemon.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Pokemon.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
         <SwiperSlide>
-          <CarrosselCard imageSrc={"/produtos/Game.png"} imageAlt={"Produto"} />
+          <CarrosselCard imageSrc={"/produtos/Game.png"} imageAlt={"Produto"} id={1}/>
         </SwiperSlide>
       </Swiper>
   )

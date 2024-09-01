@@ -13,7 +13,6 @@ export default function HeroSection() {
             <h1 className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold py-16 px-10">
                 Descubra o mundo geek em cada byte - Questbyte, sua loja de aventuras épicas!
             </h1>
-            
         </div>
     )
 }

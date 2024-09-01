@@ -6,13 +6,13 @@ export default function Paginacao(){
             <button>
                 <ArrowLeftIcon />
             </button>
-            <button className="w-8 h-8 rounded-xl bg-red-600 text-xl text-white font-bold my-5">
+            <button className="w-8 h-8 rounded-xl bg-red-600 text-xl text-white font-bold my-5 mx-2">
                 1
             </button>
             <button className="w-10 h-10 rounded-xl bg-red-600 text-xl text-white font-bold my-5 mx-2">
                 2
             </button>
-            <button className="w-8 h-8 rounded-xl bg-red-600 text-xl text-white font-bold my-5">
+            <button className="w-8 h-8 rounded-xl bg-red-600 text-xl text-white font-bold my-5 mx-2">
                 3
             </button>
             <button>
