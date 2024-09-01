@@ -24,7 +24,6 @@ export default function PostsPage(){
             price={"50,00"}
             id={1}
             />
-            
         </div>
     )
 }

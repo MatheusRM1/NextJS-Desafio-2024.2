@@ -18,9 +18,6 @@ export default function SecundarySearch({count} : SearchProps) {
                     className="w-full rounded-xl px-16 py-6 bg-white transition-all duration-300 "
                     />
                 </div>
-                <span className="text-black/70">
-                    Total de {count} publicações encontradas
-                </span>
             </div>
         </form>
         </div>

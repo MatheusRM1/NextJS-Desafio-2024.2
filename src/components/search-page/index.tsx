@@ -7,18 +7,20 @@ export default function SearchPage() {
     return(
         <div className="w-full">
             <SecundarySearch count={count}/>
-            {count === 0 ? (
-                <div className="w-full flex flex-col">
-                    <span className="text-2xl font-semibold">
+            {count != 0 ? (
+                <div className="w-full flex flex-col text-center">
+                    <span className="text-2xl lg:text-xl font-semibold">
                         Nenhuma publicação encontrada.
                     </span>
-                    <span className="text-xl text-black/70">
+                    <span className="text-xl lg:text-lg text-black/70">
                         Tente outra pesquisa ou volte para <Link href={'/posts'}>publicações</Link>
                     </span>
                 </div>
             ):(
-                <div className="hidden">
-
+                <div className="w-full text-center">
+                <span className="text-black/70">
+                    Total de {count} publicações encontradas
+                </span>
                 </div>
             )}
         </div>
