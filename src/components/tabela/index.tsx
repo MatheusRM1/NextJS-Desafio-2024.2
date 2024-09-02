@@ -20,16 +20,19 @@ export default function Tabela() {
           <table>
             <thead>
               <tr className="font-bold">
-                <td scope="col" className="px-1 md:px-20 py-4">
+                <td scope="col" className="px-1 md:px-12 py-4">
                   Id
                 </td>
-                <td scope="col" className="px-1 md:px-20 py-4">
+                <td scope="col" className="px-1 md:px-12 py-4">
                   Nome
                 </td>
-                <td scope="col" className="px-1 md:px-20 py-4">
+                <td scope="col" className="px-1 md:px-12 py-4">
                   Preço(R$)
                 </td>
-                <td scope="col" className="px-1 md:px-20 py-4">
+                <td scope="col" className="px-1 md:px-12 py-4">
+                  Descrição
+                </td>
+                <td scope="col" className="px-1 md:px-12 py-4">
                   Ações
                 </td>
               </tr>
@@ -39,26 +42,7 @@ export default function Tabela() {
                 <th className="p-1 font-medium">1</th>
                 <th className="p-1 font-medium">Camisa Geek</th>
                 <th className="p-1 font-medium">50</th>
-                <th className="p-1 flex items-center gap-1 md:gap-4">
-                  <VisualizarBotao id={1} />
-                  <EditarBotao id={1} />
-                  <DeletarBotao id={1} />
-                </th>
-              </tr>
-              <tr className="border-b">
-                <th className="p-1 font-medium">1</th>
-                <th className="p-1 font-medium">Camisa Geek</th>
-                <th className="p-1 font-medium">50</th>
-                <th className="p-1 flex items-center gap-1 md:gap-4">
-                  <VisualizarBotao id={1} />
-                  <EditarBotao id={1} />
-                  <DeletarBotao id={1} />
-                </th>
-              </tr>
-              <tr className="">
-                <th className="p-1 font-medium">1</th>
-                <th className="p-1 font-medium">Camisa Geek</th>
-                <th className="p-1 font-medium">50</th>
+                <th className="p-1 font-medium">Lorem ipsum dolor sit amet.</th>
                 <th className="p-1 flex items-center gap-1 md:gap-4">
                   <VisualizarBotao id={1} />
                   <EditarBotao id={1} />
