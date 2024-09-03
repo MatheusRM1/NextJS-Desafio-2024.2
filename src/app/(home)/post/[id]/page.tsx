@@ -1,16 +1,17 @@
 import PostIndividual from "@/components/post-individual";
+import { fetchPostbyId } from "../../../../../actions/post-individual/actions";
 
-export default function Page(){
+export default async function Page({params}: {params: {id: string}}){
+
+    const id = parseInt(params.id, 10);
+
+    console.log(id)
+
+    const post = await fetchPostbyId(id);
+
     return(
         <div className="w-full min-h-screen bg-[#A8DADC]">
-            <PostIndividual
-            imageSrc={"/produtos/Pokemon.png"}
-            imageAlt={"Pokemon"}
-            title={"Pikachu Pelucia"}
-            price={"50,00"}
-            descripiton={"Lorem ipsum dolor sit amet consectetur adipisicing elit.Maxime dicta in necessitatibus quaerat accusamus reiciendis ex nulla doloremque, dolor fugiat."}
-            id={1}
-            />
+            <PostIndividual post={post} />
         </div>  
     )
 }

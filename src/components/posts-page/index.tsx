@@ -24,6 +24,27 @@ export default function PostsPage(){
             price={"50,00"}
             id={1}
             />
+            <PostCard
+            imageSrc={"/produtos/Pokemon.png"}
+            imageAlt={"Pokemon"}
+            title={"Pikachu Pelucia"}
+            price={"50,00"}
+            id={1}
+            />
+            <PostCard
+            imageSrc={"/produtos/Pokemon.png"}
+            imageAlt={"Pokemon"}
+            title={"Pikachu Pelucia"}
+            price={"50,00"}
+            id={1}
+            />
+            <PostCard
+            imageSrc={"/produtos/Pokemon.png"}
+            imageAlt={"Pokemon"}
+            title={"Pikachu Pelucia"}
+            price={"50,00"}
+            id={1}
+            />
         </div>
     )
 }

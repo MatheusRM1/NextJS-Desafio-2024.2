@@ -1,30 +1,21 @@
 import { CircleDollarSignIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Post } from "../../../types/home/home";
 
-interface PostCardProps {
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  price: string;
-  id: number;
+type PostCardProps = {
+  post: Post
 }
 
-export default function PostCard({
-  imageSrc,
-  imageAlt,
-  title,
-  price,
-  id,
-}: PostCardProps) {
+export default function PostCard({post}: PostCardProps) {
   return (
     <div className="flex flex-wrap items-center justify-center w-full py-10 transition-all">
-      <Link href={`/post/${id}`}>
-        <div className="w-[250px] h-[300px] lg:w-[350px] lg:h-[400px] bg-white rounded-3xl justify-center mx-10 hover:text-[#04D733]">
+      <Link href={`/post/${post.id}`}>
+        <div className="w-[250px] h-[320px] lg:w-[350px] lg:h-[400px] bg-white rounded-3xl justify-center mx-10 hover:text-[#04D733]">
           <div className="relative group">
             <Image
-              src={imageSrc}
-              alt={imageAlt}
+              src={post.image || '/produtos/Capitao.png'}
+              alt={"Produto"}
               width={904}
               height={904}
               className=" w-44 h-44 lg:w-60 lg:h-60 justify-center rounded-3xl mx-5"
@@ -33,17 +24,14 @@ export default function PostCard({
               <div>
                 <h1 className="text-sm mt-3 font-bold">Descrição:</h1>
                 <p className="text-xs">
-                  Lorem ipsum dolor sit amet. Qui consectetur fugiat id delectus
-                  Lorem ipsum dolor sit amet. Qui consectetur fugiat id delectus
-                  Lorem ipsum dolor sit amet. Qui consectetur fugiat id delectus
-                  Lorem ipsum dolor sit amet. Qui consectetur fugiat id delectus
+                  {post.description}
                 </p>
               </div>
             </div>
-            <h2 className="text-center font-bold">{title}</h2>
+            <h2 className="text-center font-bold text-black">{post.title}</h2>
             <div className="flex flex-row">
-              <CircleDollarSignIcon className="m-2" />
-              <p className="font-semibold my-1">{price}</p>
+              <CircleDollarSignIcon className="m-2 z-10" />
+              <p className="font-semibold my-1 z-10">{post.price}</p>
             </div>
           </div>
         </div>

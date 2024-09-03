@@ -1,21 +1,13 @@
 import { CircleDollarSign, DollarSignIcon, LucideDollarSign } from "lucide-react";
 import Image from "next/image";
+import { IndividualPost, Post } from "../../../types/home/home";
 
-interface PostInidividualProps {
-    imageSrc: string;
-    imageAlt: string;
-    title: string;
-    price: string;
-    descripiton: string;
-    id: number;
-  }
-
-export default function PostIndividual({imageSrc, imageAlt, title, price, descripiton, id} : PostInidividualProps){
+export default function PostIndividual({post} : {post : IndividualPost}){
     return(
         <div className="w-full flex flex-col py-10 lg:flex-row justify-center items-center min-h-screen">
             <Image
-              src={imageSrc}
-              alt={imageAlt}
+              src={post?.image || '/produtos/Capitao.png'}
+              alt={'Produto'}
               width={904}
               height={904}
               className=" w-44 h-44 md:w-80 md:h-80 rounded-3xl"
@@ -26,7 +18,7 @@ export default function PostIndividual({imageSrc, imageAlt, title, price, descri
                         Produto:
                     </h1>
                     <p className="font-semibold text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl">
-                        {title}
+                        {post?.title}
                     </p>
                     <h2 className="font-bold my-2">
                         Preço:
@@ -34,14 +26,14 @@ export default function PostIndividual({imageSrc, imageAlt, title, price, descri
                     <div className="flex flex-row">
                         <CircleDollarSign className="my-1"/>
                         <p className="font-semibold mx-1 text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl">
-                            {price}
+                            {post?.price}
                         </p>
                     </div>
                     <h3 className="font-bold my-2">
                         Descrição:
                     </h3>
                         <p className="font-normal text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl">
-                            {descripiton}
+                            {post?.description}
                         </p>
                 </div>
             </div>
