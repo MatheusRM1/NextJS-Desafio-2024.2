@@ -41,3 +41,22 @@ export async function CreateProduto(formData: FormData) {
 
     redirect("/admin")
 }
+
+export async function EditProduto(id: number | undefined, formData: FormData) {
+    const title = formData.get("title") as string;
+    const priceString = formData.get("price") as string;
+    const description = formData.get("description") as string;
+
+    const price = parseFloat(priceString);
+
+    await prisma.product.update({
+        where: { id }, 
+        data: {
+            title,
+            price,
+            description,
+        }
+    })
+
+    redirect("/admin")
+}

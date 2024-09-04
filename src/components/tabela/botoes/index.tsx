@@ -1,3 +1,5 @@
+"use client"
+
 import { DeleteIcon, EditIcon, ViewIcon } from "lucide-react";
 import Link from "next/link";
 import { DeleteProduto } from "../../../../actions/admin/actions";

@@ -1,4 +1,4 @@
-
+"use server"
 
 import Paginacao from "@/components/paginacao";
 import PaginacaoAdmin from "@/components/paginacao-admin";

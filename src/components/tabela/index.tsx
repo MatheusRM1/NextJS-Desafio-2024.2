@@ -48,7 +48,7 @@ export default function Tabela({
                 <tr key={index} className="border-b">
                   <th className="p-1 font-medium">{post?.id}</th>
                   <th className="p-1 font-medium">{post?.title
-                      ? post.title.length > 30
+                      ? post.title.length > 25
                         ? post.title.slice(0, 15) + "..."
                         : post.title
                       : "Título não encontrado"}</th>
