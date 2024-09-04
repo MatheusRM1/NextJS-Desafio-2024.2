@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { CreateProduto } from "../../../../actions/admin/actions";
 
 export default function FormCriar() {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <form className="bg-[#E63946] w-[370px] h-[600px] md:w-[600px] md:h-[600px] rounded-3xl p-10">
+      <form action={CreateProduto}  className="bg-[#E63946] w-[370px] h-[600px] md:w-[600px] md:h-[600px] rounded-3xl p-10">
         <div className="flex flex-col text-white">
           <h1 className="font-bold text-center text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl p-2">
             Crie seu Produto
@@ -15,7 +16,7 @@ export default function FormCriar() {
             </p>
             <input
               type="text"
-              name="name"
+              name="title"
               placeholder="Insira o nome do produto"
               className="w-[300px] h-5 md:h-10 md:w-[500px] rounded-md text-black my-3 p-5 "
             />
@@ -26,8 +27,8 @@ export default function FormCriar() {
               Preço
             </p>
             <input
-              type="text"
-              name="preco"
+              type="number"
+              name="price"
               placeholder="Insira o preço"
               className="w-[300px] h-5 md:h-10 md:w-[500px] rounded-md text-black my-3 p-5"
             />
@@ -38,7 +39,7 @@ export default function FormCriar() {
               Descrição
             </p>
             <textarea
-              name="descricao"
+              name="description"
               placeholder="Insira a descrição"
               className="w-[300px] h-20 md:h-12 md:w-[500px] rounded-md text-black my-3 p-5 overflow-y-auto resize-none"
             />
