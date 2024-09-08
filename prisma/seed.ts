@@ -8,7 +8,6 @@ async function main() {
       title: 'Wireless Mouse',
       description: 'A smooth and responsive wireless mouse.',
       price: 29.99,
-      image: '/produtos/Capitao.png',
       createdAt: new Date(),
     },
     {

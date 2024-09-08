@@ -11,7 +11,7 @@ export default function SearchPage({posts, count, totalPages}: {posts: Post[], c
     
     return(
         <div className="w-full">
-            <SecundarySearch count={count}/>
+            <SecundarySearch />
             {count === 0 ? (
                 <div className="w-full flex flex-col text-center">
                     <span className="text-2xl lg:text-xl font-semibold">
@@ -26,10 +26,12 @@ export default function SearchPage({posts, count, totalPages}: {posts: Post[], c
                 <span className="text-black/70">
                     Total de {count} publicações encontradas
                 </span>
-                    <div className="w-full flex flex-wrap gap-12">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                         {posts.map((post, index) => (
                             <PostCard key={index} post={post}/>
                         ))}
+                    </div>
+                    <div>
                         {totalPages > 1 &&  (
                             <Pagination totalPages={totalPages}/>
                         )}

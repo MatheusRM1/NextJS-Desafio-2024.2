@@ -31,7 +31,7 @@ export default function SecundarySearch() {
     return(
         <form onSubmit={handleSubmit} className="flex basis-full " id="search" autoComplete="off">
             <div className="flex w-full flex-col items-center gap-6 my-16 ">
-                <div className="relative flex w-[700px] items-center ">
+                <div className="relative flex w-full px-2 lg:w-[700px] items-center ">
                     <SearchIcon className="w-7 h-7 absolute left-4"/>
                     <input 
                     type="text" 
