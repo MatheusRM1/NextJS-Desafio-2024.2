@@ -1,5 +1,6 @@
-import { FacebookIcon, Github, Instagram, LinkedinIcon, PhoneIcon } from "lucide-react";
+import { ContactIcon, FacebookIcon, Github, Instagram, LinkedinIcon, PhoneIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Info() {
     return (
@@ -28,11 +29,11 @@ export default function Info() {
                     Entre em Contato
                 </h2>
                 <div className="flex flex-wrap justify-center">
-                    <PhoneIcon className="m-3"/>
-                    <Instagram className="m-3"/>
-                    <LinkedinIcon className="m-3"/>
-                    <FacebookIcon className="m-3"/>
-                    <Github className="m-3"/>
+                    <Link href="https://codejr.com.br/contato/" target="_blank"><ContactIcon className="m-3"/></Link>
+                    <Link href="https://www.instagram.com/codejr/" target="_blank"><Instagram className="m-3"/></Link>
+                    <Link href="https://www.linkedin.com/company/codejr/" target="_blank"><LinkedinIcon className="m-3"/></Link>
+                    <Link href="https://www.facebook.com/codeempresajunior/" target="_blank"><FacebookIcon className="m-3"/></Link>
+                    <Link href="https://github.com/desenvolvedoresCodeJr" target="_blank"><Github className="m-3"/></Link>
                 </div>
                 <h3 className="text-center font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl p-5">
                     Endereço
