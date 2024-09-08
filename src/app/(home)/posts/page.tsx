@@ -1,7 +1,4 @@
-import Paginacao from "@/components/paginacao";
-import Produtos from "@/components/posts-card";
 import PostsPage from "@/components/posts-page";
-import Search from "@/components/search-page";
 import { fetchPosts } from "../../../../actions/posts/actions";
 
 export default async function Page({

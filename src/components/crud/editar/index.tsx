@@ -35,9 +35,7 @@ const editProdutoComId = EditProduto.bind(null, post?.id)
             <input
               type="text"
               name="price"
-              placeholder="Insira o produto"
               defaultValue={post?.price}
-              placeholder="Insira o preço"
               className="w-[300px] h-5 lg:h-10 lg:w-[500px] rounded-md text-black my-3 p-5"
             />
           </div>
@@ -48,8 +46,7 @@ const editProdutoComId = EditProduto.bind(null, post?.id)
             </p>
             <textarea
               name="description"
-              placeholder="Insira a descrição"
-              defaultValue={post?.description}
+              defaultValue={post?.description ?? ''}
               className="w-[300px] h-20 lg:h-12 lg:w-[500px] rounded-md text-black my-3 p-5 overflow-y-auto resize-none"
             />
           </div>

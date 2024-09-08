@@ -1,7 +1,5 @@
 "use server"
 
-import Paginacao from "@/components/paginacao";
-import PaginacaoAdmin from "@/components/paginacao-admin";
 import Tabela from "@/components/tabela";
 import { fetchProdutos } from "../../../actions/admin/actions";
 

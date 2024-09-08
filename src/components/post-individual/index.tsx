@@ -6,7 +6,7 @@ export default function PostIndividual({post} : {post : IndividualPost}){
     return(
         <div className="w-full flex flex-col py-10 lg:flex-row justify-center items-center min-h-screen">
             <Image
-              src={post?.image || '/produtos/Capitao.png'}
+              src={'/produtos/Moletom.png'}
               alt={'Produto'}
               width={904}
               height={904}

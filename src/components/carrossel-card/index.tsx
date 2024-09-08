@@ -9,6 +9,11 @@ type CarrosselCardProps = {
 
 export default function CarroselCard({post} : CarrosselCardProps)
 {
+
+    if(post === null)
+    {
+        return <div>Post não encontrado</div>
+    }
     return(
         <div className="flex flex-row items-center justify-center w-full my-5">
                 <div className="w-20 h-16 md:w-60 md:h-40 bg-white rounded-3xl mx-2 lg:mx-5">

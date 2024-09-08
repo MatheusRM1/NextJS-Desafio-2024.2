@@ -8,6 +8,8 @@ type PostCardProps = {
 }
 
 export default function PostCard({post}: PostCardProps) {
+  if(post === null)
+    return <div>Post não encontrado</div>
   return (
     <div className="flex flex-wrap items-center justify-center w-full py-10 transition-all">
       <Link href={`/post/${post.id}`}>

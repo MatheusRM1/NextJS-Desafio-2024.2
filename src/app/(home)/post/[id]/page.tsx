@@ -4,9 +4,7 @@ import { fetchPostbyId } from "../../../../../actions/post-individual/actions";
 export default async function Page({params}: {params: {id: string}}){
 
     const id = parseInt(params.id, 10);
-
-    console.log(id)
-
+    
     const post = await fetchPostbyId(id);
 
     return(
