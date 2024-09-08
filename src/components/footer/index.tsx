@@ -30,7 +30,7 @@ export default function Footer(){
             </div>
 
             <Image 
-            src={'/logo/logo.png'}
+            src={'/logo/Logo.png'}
             width={904}
             height={904}
             alt="Logo da Loja"
